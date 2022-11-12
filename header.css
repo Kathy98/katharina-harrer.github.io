@@ -1,0 +1,46 @@
+header {
+    padding: 100px 25px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.header__text {
+    width: 850px;
+}
+
+.header__nav {
+    position: sticky;
+    top: 0;
+    font-weight: 500;
+    z-index: 99;
+    margin-bottom: 120px;
+}
+
+nav {
+    backdrop-filter: blur(8px);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 16px;
+}
+
+nav a:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
