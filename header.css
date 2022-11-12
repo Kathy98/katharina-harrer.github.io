@@ -12,6 +12,20 @@ header {
     color: var(--secondary-text-color);
 }
 
+.header__circle {
+    width: 600px;
+    height: 600px;
+    max-width: 80vw;
+    max-height: 80vw;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 20px solid var(--main-color);
+}
+
+.header__circle img {
+    width: 100%;
+}
+
 .header__nav {
     position: sticky;
     top: 0;
