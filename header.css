@@ -6,15 +6,11 @@ header {
 
 .header__text {
     width: 850px;
-}
-
-.subheading {
-    color: var(--secondary-text-color);
-}
+} 
 
 .header__circle {
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     max-width: 80vw;
     max-height: 80vw;
     overflow: hidden;
@@ -23,42 +19,5 @@ header {
 }
 
 .header__circle img {
-    width: 100%;
-}
-
-.header__nav {
-    position: sticky;
-    top: 0;
-    font-weight: 500;
-    z-index: 99;
-    margin-bottom: 120px;
-}
-
-nav {
-    backdrop-filter: blur(8px);
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li {
-    padding: 16px;
-}
-
-nav a:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    background: var(--main-color);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 150ms ease-in-out;
-}
-
-nav a:hover::after {
     width: 100%;
 }
