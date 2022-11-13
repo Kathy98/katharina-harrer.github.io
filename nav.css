@@ -17,6 +17,10 @@ nav ul li {
     padding: 16px;
 }
 
+nav a {
+    color: var(--secondary-text-color);
+}
+
 nav a:after {
     content: '';
     height: 2px;
