@@ -50,14 +50,14 @@ label[for="menu__btn"] span {
 
 @media(max-width: 800px) {
     nav {
-        background: var(--secondary-color);
+        width: 100%;
         padding: 15px;
         border-radius: 0 0 25px 0;
-        position: fixed;
         top: 0;
         left: 0;
+        position: fixed;
         z-index: 99;
-        width: 100%;
+        background: var(--secondary-color);
     }
 
     nav ul {

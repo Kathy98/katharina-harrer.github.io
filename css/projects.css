@@ -1,0 +1,51 @@
+#projects {
+    max-width: 90%;
+    background-color: var(--primary-color);
+}
+
+#projects h2 {
+    margin-top: 50px;
+}
+
+.flex_container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+    max-width: calc(90% - 40px);
+    border-radius: 100px;
+    padding: 80px 20px;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card * {
+    text-align: center;
+}
+
+.card a {
+    width: min-content;
+    margin: 0 auto;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: 2px solid var(--main-color);
+    
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 150ms ease-in-out;
+}
+
+.card a:hover {
+    background-color: transparent;
+    color: var(--main-color);
+}

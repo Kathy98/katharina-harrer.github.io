@@ -4,7 +4,7 @@
   --main-color: rgb(0,165,179);
   --primary-color: rgb(0, 39, 43);
   --secondary-color: rgb(0, 53, 59);
-  --light-secondary-color: rgb(99,99,99);
+  --light-secondary-color: rgb(30, 76, 82);
   --text-color: white;
   --secondary-text-color: rgb(195, 227, 230);
 }
@@ -29,6 +29,11 @@ h1 {
 
 h2 {
   font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 .subheading {
@@ -47,6 +52,10 @@ h2 {
 
   h2 {
     font-size: 8vw;
+  }
+
+  h3 {
+    font-size: 6vw;
   }
 }
 
@@ -79,4 +88,14 @@ a {
 
 a:hover {
   color: var(--text-color);
+}
+
+.container > .card {
+  transition: 250ms ease-in-out;
+}
+
+.container > .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+  z-index: 3;
 }
