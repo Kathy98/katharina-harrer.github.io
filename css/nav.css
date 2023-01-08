@@ -4,7 +4,6 @@ nav {
     position: sticky;
     top: 0;
     z-index: 99;
-    margin-bottom: 80px;
 }
 
 nav ul {
@@ -21,7 +20,7 @@ nav a {
     color: var(--secondary-text-color);
 }
 
-nav a:after {
+nav a::after {
     content: '';
     height: 2px;
     width: 0;
@@ -36,11 +35,7 @@ nav a:hover::after {
     width: 100%;
 }
 
-#menu__btn {
-    display: none;
-}
-
-label[for="menu__btn"] {
+#menu__btn, label[for="menu__btn"] {
     display: none;
 }
 

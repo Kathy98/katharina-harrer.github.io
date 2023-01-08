@@ -9,6 +9,10 @@
   --secondary-text-color: rgb(195, 227, 230);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;

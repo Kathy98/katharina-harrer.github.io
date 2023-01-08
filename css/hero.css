@@ -1,10 +1,13 @@
-header {
+#hero {
+    min-height: 100%;
+    margin: 0 auto;
     padding: 100px 25px;
-    gap: 50px;
+    box-sizing: border-box;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
-.header__circle {
+.hero__circle {
     width: 400px;
     height: 400px;
     max-width: 80vw;
@@ -15,15 +18,15 @@ header {
     border: 15px solid var(--main-color);
 }
 
-.header__circle img {
+.hero__circle img {
     width: 100%;
 }
 
-.header__text {
+.hero__text {
     width: 850px;
 } 
 
-.header__text h1 {
+.hero__text h1 {
     width: fit-content;
     display: block;
     position: relative;
@@ -32,20 +35,20 @@ header {
     color: transparent;
 }
 
-.header__text h1:nth-child(1) {
+.hero__text h1:nth-child(1) {
     animation-delay: 1s;
 }
 
-.header__text h1:nth-child(2) {
+.hero__text h1:nth-child(2) {
     animation-delay: 2s;
 }
 
-.header__text h1:nth-child(3) {
+.hero__text h1:nth-child(3) {
     animation: h1_name 0.5s ease forwards;
     animation-delay: 3s;
 }
 
-.header__text h1 span {
+.hero__text h1 span {
     width: 0;
     height: 100%;
     top: 0;
@@ -56,15 +59,15 @@ header {
     background-color: var(--main-color);
 }
 
-.header__text h1:nth-child(1) span {
+.hero__text h1:nth-child(1) span {
     animation-delay: 0.5s;
 }
 
-.header__text h1:nth-child(2) span {
+.hero__text h1:nth-child(2) span {
     animation-delay: 1.5s;
 }
 
-.header__text h1:nth-child(3) span {
+.hero__text h1:nth-child(3) span {
     animation-delay: 2.5s;
 }
 
