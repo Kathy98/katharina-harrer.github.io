@@ -1,0 +1,68 @@
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Katharina Harrer | Portfolio Website</title>
+        <link rel="icon" href="images/logo.svg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/nav.css" />
+        <link rel="stylesheet" type="text/css" href="css/projects.css" />
+    </head>
+    <body>
+        
+        <nav>
+            <input type="checkbox" id="menu__btn" checked=''>
+            <label for="menu__btn">
+                <span class="material-symbols-rounded">menu</span>
+            </label>
+            <ul class="center">
+                <li>
+                    <a href="/#home"> Home </a>
+                </li>
+                <li>
+                    <a href="/#about_me"> Über Mich </a>
+                </li>
+                <li>
+                    <a href="/#projects"> Projekte </a>
+                </li>
+                <li>
+                    <a href="/#contact"> Kontakt </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="projects">
+            <h2>Projekt Portfolio</h2>
+            <p class="center">
+                Hier findest du eine Auswahl meiner bisherigen Projekte im Software-Bereich. <br/>
+                Falls du dich für ein Projekt näher interessierst kannst du den Code auch auf GitHub einsehen!
+            </p>
+            <div class="project_container">
+                <div class="project_content container">
+                    <div class="center">
+                        <img src="images/wp-project.png" alt="Rezeptbeitrag" title="Rezeptbeitrag">
+                    </div>
+                    <div class="project__text">
+                        <h3>WordPress Plugin-Entwicklung</h3>
+                        <p>
+                            Im Rahmen eines Hochschulprojekts im sechsten Semester hatte ich die Aufgabe eine Website mittels WordPress zu entwickeln. 
+                            Die Besonderheit dabei war, dass keine vorgefertigten Themes, Plugins, Shortcodes, usw. genutzt wurden, 
+                            da diese eigenständig programmiert werden sollten.
+                            Das Hauptaugenmerk lag auf der Entwicklung mittels PHP, wobei auch JavaScript, HTML und CSS zum Einsatz kam. 
+                            Zudem wurde auf die Lokalisierung geachtet, um die Inhalte auf Deutsch wie auch Englisch anzeigen zu können. 
+                            <br/>
+                            Für das Projekt habe ich ein Plugin "Rezepte" entwickelt, um dem Nutzer die Möglichkeit zu geben, eigene Rezepte anzulegen.
+                            Zusätzlich habe ich ein Widget mit mehreren Konfigurationsmöglichkeiten programmiert. 
+                            Es ist dafür da, Beiträge per Zufall anzuzeigen. 
+                            Der Nutzer hat ferner die Möglichkeit, Nachhaltigkeitstipps einzureichen, hierfür habe ich einen JSON-Export entwickelt. <br/>
+                        </p>
+                        <a class="btn center" href="https://github.com/katharina-harrer/wp-plugins" target="_blank">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="center">
+            &copy; 2023 Katharina Harrer
+        </footer>
+    </body>
+</html>

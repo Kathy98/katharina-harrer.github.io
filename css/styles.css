@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --main-color: rgb(0,165,179);
-  --primary-color: rgb(0, 39, 43);
-  --secondary-color: rgb(0, 53, 59);
-  --light-secondary-color: rgb(30, 76, 82);
+  --main-color: #337eff;
+  --primary-color: #0E1628;
+  --secondary-color: #16223E;
+  --light-secondary-color: #1E2A49;
   --text-color: white;
-  --secondary-text-color: rgb(195, 227, 230);
+  --secondary-text-color: #C6C9D2;
 }
 
 html {
@@ -51,15 +51,15 @@ h3 {
   }
 
   h1 {
-    font-size: 11vw;
+    font-size: clamp(16px, 11vw, 100px);
   }
 
   h2 {
-    font-size: 8vw;
+    font-size: clamp(16px, 8vw, 50px);
   }
 
   h3 {
-    font-size: 6vw;
+    font-size: clamp(16px, 6vw, 30px);
   }
 }
 
@@ -102,4 +102,22 @@ a:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
   z-index: 3;
+}
+
+.btn {
+  width: fit-content;
+  margin: 40px auto 0 auto;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: 2px solid var(--main-color);
+  
+  background-color: var(--main-color);
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 150ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
 }
