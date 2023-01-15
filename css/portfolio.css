@@ -31,6 +31,12 @@
     gap: 40px;
 }
 
+.logo__container {
+    flex-direction: row; 
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
 .hover-img img {
     width: 100%;
     max-width: 680px;
