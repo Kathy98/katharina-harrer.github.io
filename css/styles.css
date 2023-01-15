@@ -5,7 +5,7 @@
   --primary-color: #0E1628;
   --secondary-color: #16223E;
   --light-secondary-color: #1E2A49;
-  --text-color: white;
+  --text-color: #fff;
   --secondary-text-color: #C6C9D2;
 }
 
@@ -56,13 +56,14 @@ p {
   line-height: 175%;
 }
 
-section {
+.home__section {
+  min-height: 100%;
   margin: 0 auto;
   padding: 50px 25px;
   box-sizing: border-box;
   transform: translateY(-48px);
-  background-color: var(--secondary-color);
   flex-wrap: wrap-reverse;
+  background-color: var(--primary-color);
 }
 
 a {
@@ -104,6 +105,84 @@ a:hover {
   color: var(--main-color);
 }
 
+.hover-img {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.hover-img * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.hover-img::before, .hover-img::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: scaleY(2);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 32px solid rgb(0, 0, 0, 0.5);
+  content: '';
+}
+
+.hover-img figcaption {
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  transition-delay: 0.1s;
+  line-height: 1.1em;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.hover-img figcaption h3 {
+  text-transform: uppercase;
+}
+
+.hover-img figcaption h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.hover-img:hover::before, .hover-img:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hover-img:hover > img {
+  opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+  opacity: 1;
+}
+
+.hover-img:hover figcaption h3 {
+  letter-spacing: 20px;
+}
+
+.hover-img:hover figcaption h4 {
+  letter-spacing: 5px;
+}
+
+.copyright {
+  padding-bottom: 50px;
+}
+
 @media(max-width: 800px) {
   body {
     font-size: 16px;
@@ -123,5 +202,13 @@ a:hover {
 
   p {
     text-align: left;
+  }
+
+  .hover-img figcaption h3 {
+    font-size: clamp(16px, 6vw, 24px);
+  }
+
+  .hover-img figcaption h4 {
+    font-size: clamp(16px, 4vw, 20px);
   }
 }

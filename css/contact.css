@@ -1,13 +1,15 @@
-footer {
-    padding: 70px 0;
+#contact {
+    padding: 50px 0;
     background-color: var(--secondary-color);
 }
 
-.grid_container {
-    width: 1500px;
-    max-width: 90%;
-    margin: 60px auto;
+#contact h2 {
+    margin: 25px 0;
+}
 
+.grid_container {
+    max-width: 90%;
+    margin: 0 auto;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -82,6 +84,12 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media(max-width: 1200px) {
+    .grid_item {
+        font-size: 16px;
     }
 }
 

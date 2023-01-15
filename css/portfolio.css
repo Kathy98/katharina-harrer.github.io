@@ -1,0 +1,95 @@
+#portfolio {
+    padding: 100px 25px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    font-size: 18px;
+}
+
+#portfolio h2 {
+    margin-top: 50px;
+}
+
+.project__section {
+    padding: 100px 0;
+}
+
+.project__section .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.project__section .content--reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.img__container {
+    flex-direction: column; 
+    gap: 40px;
+}
+
+.hover-img img {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    max-height: 400px;
+}
+
+.project__section .text {
+    width: 680px;
+    max-width: 90%;
+}
+
+.project__section .headings {
+    padding: 10px 0;
+}
+
+.headings h3 {
+    color: var(--main-color);
+}
+
+.headings h4 {
+    color: var(--secondary-text-color);
+}
+
+.circle-icon {
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    background: var(--secondary-color);
+}
+
+@media(max-width: 1600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .project__section .content {
+        gap: 20px;
+    }
+
+    .img__container {
+        gap: 20px;
+    }
+
+    .hover-img img {
+        max-width: 500px;
+        max-height: 350px;
+    }
+}
+
+@media(max-width: 800px) {
+    .project__section {
+        padding: 50px 0; 
+    }
+
+    .project__text {
+        max-width: 100%;
+    }
+}

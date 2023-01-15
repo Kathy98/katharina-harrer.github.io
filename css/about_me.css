@@ -1,19 +1,27 @@
 #about_me {
-    min-height: 100%;
-    box-sizing: border-box;
+    background-color: var(--secondary-color);
 }
 
 #about_me img {
     width: 500px;
     max-width: 90%;
     border: 15px solid var(--text-color);
-    margin-top: 50px;
 }
 
 .about_me__text {
     width: 750px;
     max-width: 90%;
     padding: 25px;
+}
+
+.about_me__text h2 {
+    padding-bottom: 25px;
+}
+
+@media(max-width: 1600px) {
+    #about_me img {
+        width: 400px;
+    }
 }
 
 @media(max-width: 800px) {
