@@ -54,6 +54,7 @@ h3 {
 p {
   text-align: justify;
   line-height: 175%;
+  word-wrap: break-word;
 }
 
 .home__section {
@@ -97,6 +98,7 @@ a:hover {
   background-color: var(--main-color);
   color: var(--text-color);
   text-decoration: none;
+  text-align: center;
   transition: 150ms ease-in-out;
 }
 

@@ -34,3 +34,10 @@
         font-size: clamp(16px, 4vw, 24px);
     }
 }
+
+@media(max-width: 800px) {
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
