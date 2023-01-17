@@ -1,24 +1,30 @@
 #portfolio {
-    padding: 100px 25px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    background-color: var(--primary-color);
+    padding: 100px 0 50px 0;
     font-size: 18px;
+    background-color: var(--primary-color);
 }
 
-#nakt, #velvet-mite {
+#portfolio section:nth-child(2n) {
     background-color: var(--secondary-color);
+}
+
+#portfolio section:nth-child(2n) .logo__container .circle-icon {
+    background-color: var(--primary-color);
+}
+
+#portfolio section {
+    padding: 100px 25px;
 }
 
 #portfolio h2 {
     margin-top: 50px;
 }
 
-.project__section {
-    padding: 100px 0;
+#portfolio .info {
+    padding: 0 25px;
 }
 
-.project__section .content {
+#portfolio section .content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -26,7 +32,7 @@
     flex-wrap: wrap;
 }
 
-.project__section .content--reverse {
+#portfolio section .content--reverse {
     flex-wrap: wrap-reverse;
 }
 
@@ -48,12 +54,11 @@
     max-height: 400px;
 }
 
-.project__section .text {
+#portfolio section .text {
     width: 680px;
-    max-width: 90%;
 }
 
-.project__section .headings {
+#portfolio section .headings {
     padding: 10px 0;
 }
 
@@ -72,7 +77,7 @@
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 @media(max-width: 1600px) {
@@ -80,7 +85,7 @@
         font-size: 16px;
     }
 
-    .project__section .content {
+    #portfolio section .content {
         gap: 20px;
     }
 
@@ -99,8 +104,8 @@
         font-size: 16px;
     }
 
-    .project__section {
-        padding: 50px 0; 
+    #portfolio section {
+        padding: 50px 25px; 
     }
 
     .project__text {
