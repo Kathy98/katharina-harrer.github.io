@@ -2,7 +2,7 @@
     background-color: var(--secondary-color);
 }
 
-#about_me img {
+.about_me__img {
     width: 500px;
     max-width: 90%;
     border: 15px solid var(--text-color);
@@ -18,8 +18,17 @@
     padding-bottom: 25px;
 }
 
+.logo__container {
+    margin-top: 25px;
+    justify-content: space-evenly;
+}
+
+.logo__container .circle-icon {
+    background-color: var(--primary-color);
+}
+
 @media(max-width: 1600px) {
-    #about_me img {
+    .about_me__img {
         width: 400px;
     }
 }
@@ -30,7 +39,7 @@
         max-width: 100%;
     }
 
-    #about_me img {
+    .about_me__img {
         margin-top: 0;
     }
 }

@@ -19,21 +19,21 @@
         "item_3 item_4 item_4";
 }
 
-.grid_item {
+.grid_container .grid_item {
     padding: 20px 50px;
     gap: 20px;
     background-color: var(--light-secondary-color);
 }
 
-.grid_item a {
+.grid_container .grid_item a {
     color: var(--text-color);
 }
   
-.grid_item a b {
+.grid_container .grid_item a b {
     color: var(--main-color);
 }
 
-.grid_item img {
+.grid_container .grid_item img {
     width: 100px;
     height: 100px;
 }
@@ -88,17 +88,17 @@
 }
 
 @media(max-width: 1200px) {
-    .grid_item {
+    .grid_container .grid_item {
         font-size: 16px;
     }
 }
 
 @media(max-width: 650px) {
-    .grid_item {
+    .grid_container .grid_item {
         padding: 20px;
     }
 
-    .grid_item img {
+    .grid_container .grid_item img {
         width: 75px;
         height: 75px;
     }
