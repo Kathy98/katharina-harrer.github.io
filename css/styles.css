@@ -24,6 +24,7 @@ body {
   color: var(--text-color);
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
+  hyphens: auto;
 }
 
 h1 {
@@ -228,5 +229,10 @@ a:hover {
 
   .hover-img figcaption h4 {
     font-size: clamp(16px, 4vw, 20px);
+  }
+
+  .circle-icon {
+    width: 60px;
+    height: 60px;
   }
 }
