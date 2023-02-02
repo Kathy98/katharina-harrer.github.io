@@ -59,7 +59,7 @@ p {
 }
 
 .home__section {
-  min-height: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 50px 25px;
   box-sizing: border-box;
