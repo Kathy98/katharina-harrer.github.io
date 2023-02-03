@@ -1,5 +1,5 @@
 #hero {
-    height: 100%;
+    min-height: 100%;
     margin: 0 auto;
     padding: 100px 25px;
     box-sizing: border-box;
@@ -69,6 +69,12 @@
 
 .hero__text h1:nth-child(3) span {
     animation-delay: 2.5s;
+}
+
+@media(min-width: 1600px) {
+    #hero {
+        height: 100%;
+    }
 }
 
 @keyframes h1_reveal_container {

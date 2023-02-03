@@ -59,7 +59,7 @@ p {
 }
 
 .home__section {
-  height: 100%;
+  min-height: 100%;
   margin: 0 auto;
   padding: 50px 25px;
   box-sizing: border-box;
@@ -200,6 +200,12 @@ a:hover {
 
 .copyright {
   padding-bottom: 50px;
+}
+
+@media(min-width: 1600px) {
+  .home__section {
+    height: 100%;
+  }
 }
 
 @media(max-width: 800px) {
