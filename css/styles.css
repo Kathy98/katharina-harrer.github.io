@@ -60,7 +60,7 @@ p {
 }
 
 .home__section {
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 50px 25px;
   box-sizing: border-box;
@@ -203,19 +203,13 @@ a:hover {
   padding-bottom: 50px;
 }
 
-@media(min-width: 1600px) {
-  .home__section {
-    height: 100%;
-  }
-}
-
-@media(max-width: 800px) {
+@media(max-width: 1600px) {
   body {
     font-size: 16px;
   }
 
   h1 {
-    font-size: clamp(16px, 11vw, 100px);
+    font-size: clamp(16px, 10vw, 80px);
   }
 
   h2 {

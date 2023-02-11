@@ -6,12 +6,12 @@
     width: 500px;
     max-width: 90%;
     border: 15px solid var(--text-color);
+    margin: 25px;
 }
 
 .about_me__text {
     width: 750px;
     max-width: 90%;
-    padding: 25px;
 }
 
 .about_me__text h2 {
@@ -30,6 +30,9 @@
 @media(max-width: 1600px) {
     .about_me__img {
         width: 400px;
+    }
+    .about_me__text {
+        width: 650px;
     }
 }
 
