@@ -4,10 +4,12 @@
     background-color: var(--primary-color);
 }
 
+#portfolio #project .logo__container .circle-icon,
 #portfolio section:nth-child(2n) {
     background-color: var(--secondary-color);
 }
 
+#portfolio #project,
 #portfolio section:nth-child(2n) .logo__container .circle-icon {
     background-color: var(--primary-color);
 }
@@ -62,6 +64,11 @@
 
 .headings h4 {
     color: var(--secondary-text-color);
+}
+
+.cr-colored {
+    padding-top: 50px;
+    background-color: var(--secondary-color);
 }
 
 @media(max-width: 1600px) {
