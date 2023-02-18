@@ -102,4 +102,8 @@
     .project__text {
         max-width: 100%;
     }
+
+    .cr-colored {
+        padding-top: 25px;
+    }
 }
