@@ -42,11 +42,6 @@ h3 {
   font-size: 30px;
 }
 
-.subheading {
-  margin-top: 25px;
-  color: var(--secondary-text-color);
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -84,17 +79,6 @@ a:hover {
   flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
-}
-
-.hero__heading {
-  font-weight: 600;
-  color: var(--secondary-text-color);
-}
-
-.hero__icons {
-  border-top: 2px solid var(--main-color); 
-  width: 50%; 
-  padding: 5px;
 }
 
 .circle-icon {
@@ -255,29 +239,7 @@ a:hover {
 }
 
 @media(max-width: 800px) {
-  .hero__icons {
-    width: 70%;
-  }
-  
-  .hero__heading {
-    padding-top: 16px;
-    font-size: clamp(18px, 4vw, 20px);
-  }
-
   .copyright {
     padding-bottom: 25px;
-  }
-}
-
-@media(max-width: 650px) {
-  .hero__icons {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-  }
-
-  .circle-icon--small {
-    width: 40px;
-    height: 40px;
   }
 }
