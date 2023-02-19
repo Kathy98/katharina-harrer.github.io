@@ -48,6 +48,10 @@ h3 {
   align-items: center;
 }
 
+.center--wrap {
+  flex-wrap: wrap;
+}
+
 p {
   text-align: justify;
   line-height: 175%;
@@ -145,7 +149,6 @@ a:hover {
   right: 0;
   z-index: 1;
   opacity: 0;
-  transition: all 0.3s ease;
   transform: scaleY(2);
   background-color: rgba(0, 0, 0, 0.5);
   border-top: 32px solid rgba(0, 0, 0, 0.5);

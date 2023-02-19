@@ -47,11 +47,14 @@
     width: 100%;
     max-width: 680px;
     height: auto;
-    max-height: 400px;
+    max-height: 500px;
 }
 
 #portfolio section .text {
     width: 680px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
 }
 
 #portfolio section .headings {
@@ -71,6 +74,10 @@
     background-color: var(--secondary-color);
 }
 
+.btn--centered {
+    margin: 25px auto 0 auto;
+}
+
 @media(max-width: 1600px) {
     body {
         font-size: 16px;
@@ -87,6 +94,11 @@
     .hover-img img {
         max-width: 500px;
         max-height: 350px;
+    }
+
+    .hover-img--text img {
+        max-width: 680px;
+        max-height: 500px;
     }
 }
 
