@@ -70,11 +70,18 @@
     padding: 10px 0;
 }
 
+#portfolio section:nth-of-type(2n) .secondary--heading {
+    color: var(--secondary-color);
+}
+
+#portfolio section:nth-of-type(2n+1) .secondary--heading {
+    color: var(--primary-color);
+}
+
 #portfolio section .secondary--heading {
     padding: 0 10px;
     margin: 5px 0;
     width: fit-content;
-    color: var(--primary-color);
     background: var(--text-color);
 }
 
