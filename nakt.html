@@ -31,41 +31,21 @@
             </ul>
         </nav>
         <div id="portfolio">
-            <h2>Projekt Portfolio</h2>
-            <section id="project">
-                <div class="content content--reverse container">
-                    <div class="text">
-                        <div class="headings">
-                            <h3>Website NAKT</h3>
-                            <h4>WordPress Plugin-Entwicklung, Webentwicklung</h4>
-                        </div>
-                        <p>
-                            NAKT? Na, dein Interesse geweckt? Bei NAKT handelt es sich um den Namen der WordPress Website, 
-                            die ich innerhalb eines Studienprojektes im sechsten Semester entwickelt habe.
-                            Die Besonderheit dabei war, dass keine vorgefertigten Themes, Plugins, Shortcodes, usw. genutzt wurden, 
-                            da diese eigenständig programmiert werden sollten.
-                            Das Hauptaugenmerk lag auf der Entwicklung mittels PHP, wobei auch HTML, JavaScript und CSS zum Einsatz kamen. 
-                            Zudem wurde auf die Lokalisierung geachtet, um die Inhalte auf Deutsch wie auch Englisch anzeigen zu können. 
-                        </p>
-                        <br/>
-                        <h4>Meine Aufgaben</h4>
-                        <p>
-                            Für das Projekt habe ich ein Plugin "Rezepte" entwickelt, um der nutzenden Person die Möglichkeit zu geben, eigene Rezepte anzulegen.
-                            Zusätzlich habe ich ein Widget mit mehreren Konfigurationsmöglichkeiten programmiert. 
-                            Es ist dafür da, Beiträge per Zufall anzuzeigen. 
-                            Die nutzende Person hat ferner die Möglichkeit, Nachhaltigkeitstipps einzureichen, hierfür habe ich einen JSON-Export entwickelt. <br/>
-                        </p>
-                        <a class="btn center" href="https://github.com/katharina-harrer/wp-plugins" target="_blank">Mehr erfahren</a>
+            <section class="center">
+                <div>
+                    <div class="portfolio--heading">
+                        <h2 class="primary-project-heading">Website NAKT</h2>
+                        <h4>WordPress Plugin-Entwicklung, Webentwicklung</h4>
                     </div>
-                    <div class="img__container center">
-                        <figure class="hover-img">
-                            <img src="images/projects/nakt/recipe-customizer.png" alt="Rezeptbeitrag">
-                            <figcaption class="center">
-                                <h3>NAKT</h3>
-                                <h4>Webentwicklung</h4>
-                            </figcaption>
-                        </figure>
-                        <div>
+                    <div class="content">
+                        <div class="img__container center">
+                            <figure class="hover-img">
+                                <img src="images/projects/nakt/recipe-customizer.png" alt="Rezeptbeitrag">
+                                <figcaption class="center">
+                                    <h3>NAKT</h3>
+                                    <h4>Webentwicklung</h4>
+                                </figcaption>
+                            </figure>
                             <div class="logo__container center container">
                                 <img src="images/tech-icons/wordpress.svg" alt="WordPress" title="WordPress" class="circle-icon grid_item">
                                 <img src="images/tech-icons/php.svg" alt="PHP" title="PHP" class="circle-icon grid_item">
@@ -74,11 +54,69 @@
                                 <img src="images/tech-icons/css.svg" alt="CSS" title="CSS" class="circle-icon grid_item">
                             </div>
                         </div>
+                        <div class="text">
+                            <div class="secondary--heading">
+                                <h3>Das Projekt</h3>
+                            </div>
+                            <p>
+                                NAKT? Na, dein Interesse geweckt? Bei NAKT handelt es sich um den Namen der WordPress Website, 
+                                die ich innerhalb eines Studienprojektes im sechsten Semester entwickelt habe.
+                                Die Besonderheit dabei war, dass keine vorgefertigten Themes, Plugins, Shortcodes, usw. genutzt wurden, 
+                                da diese eigenständig programmiert werden sollten.
+                                Das Hauptaugenmerk lag auf der Entwicklung mittels PHP, wobei auch HTML, JavaScript und CSS zum Einsatz kamen. 
+                                Zudem wurde auf die Lokalisierung geachtet, um die Inhalte auf Deutsch wie auch Englisch anzeigen zu können. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="center">
+                <div class="content">
+                    <div class="text">
+                        <div class="secondary--heading">
+                            <h3>Meine Aufgaben</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Für das Projekt habe ich ein Plugin "Rezepte" entwickelt, um der nutzenden Person die Möglichkeit zu geben, eigene Rezepte anzulegen.
+                                Zusätzlich habe ich ein Widget mit mehreren Konfigurationsmöglichkeiten programmiert. 
+                                Es ist dafür da, Beiträge per Zufall anzuzeigen. 
+                                Die nutzende Person hat ferner die Möglichkeit, Nachhaltigkeitstipps einzureichen, hierfür habe ich einen JSON-Export entwickelt. <br/>
+                            </p>
+                            <a class="btn center" href="https://github.com/katharina-harrer/wp-plugins" target="_blank">Auf GitHub ansehen</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        Die erlernten Kompetenzen lassen sich wie folgt festhalten:
+                        <ul>
+                            <li><b>Plugin – Rezepte</b>
+                                <ul class="list">
+                                    <li>Shortcode (Formular)</li>
+                                    <li>Frontend-Formular (Rezepterstellung)</li>
+                                    <li>User-generated content (Rezepte einreichen über Frontend-Formular)</li>
+                                    <li>Erweiterung der Template Hierarchie (Single Post Template)</li>
+                                    <li>Erweiterung des Customizers</li>
+                                    <li>Custom Post Type (Rezepte)</li>
+                                    <li>Einsatz von Medien (Upload eines Rezeptbildes als Anhang; Einbinden von Bildern und Videos in die erstellten Seiten)</li>
+                                    <li>Metadaten (Custom Taxonomy, WP Options)</li>
+                                    <li>WPDB (Löschen von Taxonomie und Terms)</li>
+                                    <li>Backend-Erweiterung (Metaboxen für die Rezeptdaten, Plugin-Einstellungen, Export)</li>
+                                    <li>AJAX</li>
+                                </ul>
+                            </li>
+                            <li><b>Widget – Zufällige Beiträge:</b> Konfiguration</li>
+                            <li><b>Sonstiges</b>
+                                <ul class="list">
+                                    <li>Content-Selection (WP_Query: Export-Funktion und Widget)</li>
+                                    <li>JSON als Export-Format (Backend Tipps Plugin)</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
         </div>
-        <footer class="copyright cr-colored center">
+        <footer class="copyright center">
             &copy; 2023 Katharina Harrer
         </footer>
     </body>

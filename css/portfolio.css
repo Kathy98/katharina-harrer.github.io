@@ -1,5 +1,5 @@
 #portfolio {
-    padding: 100px 0 50px 0;
+    padding-bottom: 50px;
     font-size: 16px;
     background-color: var(--primary-color);
 }
@@ -16,10 +16,8 @@
 
 #portfolio section {
     padding: 100px 25px;
-}
-
-#portfolio h2 {
-    margin-top: 50px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 #portfolio .info {
@@ -34,7 +32,7 @@
     flex-wrap: wrap;
 }
 
-#portfolio section:nth-child(2n) .content {
+#portfolio section:nth-child(2n+1) .content {
     flex-wrap: wrap-reverse;
 }
 
@@ -56,14 +54,15 @@
 }
 
 #portfolio section .text {
-    width: 680px;
+    max-width: 680px;
     display: flex; 
     flex-direction: column; 
     justify-content: center;
 }
 
-#portfolio .portfolio--heading {
+.portfolio--heading {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #portfolio section .headings {
@@ -86,8 +85,16 @@
 }
 
 .headings h3, 
-.portfolio--heading h2 {
+.primary-project-heading {
     color: var(--main-color);
+}
+
+.primary-portfolio-heading {
+    width: fit-content; 
+    margin: auto; 
+    padding: 0 10px; 
+    background: var(--main-color);
+    color: var(--primary-color);
 }
 
 .headings h4, .portfolio--heading h4 {
@@ -110,6 +117,10 @@
 .more_info {
     text-align: center;
     margin: 20px 0;
+}
+
+.list {
+    list-style-position: inside;
 }
 
 @media(max-width: 1600px) {
@@ -139,10 +150,15 @@
 @media(max-width: 800px) {
     #portfolio {
         font-size: 16px;
+        padding: 50px 0;
     }
 
     #portfolio section {
         padding: 50px 25px; 
+    }
+
+    .portfolio--heading {
+        margin-bottom: 50px;
     }
 
     .project__text {
