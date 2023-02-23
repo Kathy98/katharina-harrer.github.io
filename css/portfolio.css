@@ -32,7 +32,9 @@
     flex-wrap: wrap;
 }
 
-.portfolio section:nth-child(2n+1) .content {
+#portfolio section:nth-child(2n) .content,
+#trilum section:nth-child(2n) .content, 
+#velvet-mite section .content {
     flex-wrap: wrap-reverse;
 }
 
@@ -55,9 +57,7 @@
 
 .portfolio section .text {
     max-width: 680px;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
+    margin: auto 0;
 }
 
 .portfolio--heading {
