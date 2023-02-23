@@ -1,30 +1,30 @@
-#portfolio {
+.portfolio {
     padding-bottom: 50px;
     font-size: 16px;
     background-color: var(--primary-color);
 }
 
-#portfolio #project .logo__container .circle-icon,
-#portfolio section:nth-of-type(2n) {
+.portfolio #project .logo__container .circle-icon,
+.portfolio section:nth-of-type(2n) {
     background-color: var(--secondary-color);
 }
 
-#portfolio #project,
-#portfolio section:nth-of-type(2n) .logo__container .circle-icon {
+.portfolio #project,
+.portfolio section:nth-of-type(2n) .logo__container .circle-icon {
     background-color: var(--primary-color);
 }
 
-#portfolio section {
+.portfolio section {
     padding: 100px 25px;
     min-height: 100vh;
     box-sizing: border-box;
 }
 
-#portfolio .info {
+.portfolio .info {
     padding: 0 25px;
 }
 
-#portfolio section .content {
+.portfolio section .content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,7 +32,7 @@
     flex-wrap: wrap;
 }
 
-#portfolio section:nth-child(2n+1) .content {
+.portfolio section:nth-child(2n+1) .content {
     flex-wrap: wrap-reverse;
 }
 
@@ -53,7 +53,7 @@
     max-height: 600px;
 }
 
-#portfolio section .text {
+.portfolio section .text {
     max-width: 680px;
     display: flex; 
     flex-direction: column; 
@@ -65,19 +65,19 @@
     margin-bottom: 100px;
 }
 
-#portfolio section .headings {
+.portfolio section .headings {
     padding: 10px 0;
 }
 
-#portfolio section:nth-of-type(2n) .secondary--heading {
+.portfolio section:nth-of-type(2n) .secondary--heading {
     color: var(--secondary-color);
 }
 
-#portfolio section:nth-of-type(2n+1) .secondary--heading {
+.portfolio section:nth-of-type(2n+1) .secondary--heading {
     color: var(--primary-color);
 }
 
-#portfolio section .secondary--heading {
+.portfolio section .secondary--heading {
     padding: 0 10px;
     margin: 5px 0;
     width: fit-content;
@@ -123,12 +123,20 @@
     list-style-position: inside;
 }
 
+#list {
+    padding: 0 25px;
+}
+
+#list span {
+    color: var(--secondary-text-color);
+}
+
 @media(max-width: 1600px) {
     body {
         font-size: 16px;
     }
 
-    #portfolio section .content {
+    .portfolio section .content {
         gap: 20px;
     }
 
@@ -148,12 +156,12 @@
 }
 
 @media(max-width: 800px) {
-    #portfolio {
+    .portfolio {
         font-size: 16px;
         padding: 50px 0;
     }
 
-    #portfolio section {
+    .portfolio section {
         padding: 50px 25px; 
     }
 
