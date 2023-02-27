@@ -131,7 +131,7 @@ a:hover {
 }
 
 .hover-img {
-  display: inline-block;
+  display: block;
   overflow: hidden;
   position: relative;
   text-align: center;
