@@ -2,9 +2,9 @@
 
 :root {
   --main-color: #337eff;
-  --primary-color: #0E1628;
-  --secondary-color: #16223E;
-  --light-secondary-color: #1E2A49;
+  --primary-color: #020617;
+  --secondary-color: #0f172a;
+  --light-secondary-color: #15213a;
   --text-color: #fff;
   --secondary-text-color: #C6C9D2;
 }
@@ -55,7 +55,7 @@ h3 {
 }
 
 p {
-  text-align: justify;
+  text-align: justify !important;
   line-height: 175%;
 }
 
