@@ -32,10 +32,15 @@
     flex-wrap: wrap;
 }
 
-#portfolio section:nth-child(2n) .content,
+#erika section:nth-child(2n-1) .content, 
+#ecocalypse section:nth-child(2n-1) .content,
 #trilum section:nth-child(2n) .content, 
 #velvet-mite section .content {
     flex-wrap: wrap-reverse;
+}
+
+#portfolio section:nth-child(2n) .content {
+    flex-direction: row-reverse;
 }
 
 .img__container {
