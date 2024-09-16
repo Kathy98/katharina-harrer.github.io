@@ -34,8 +34,7 @@
 
 #erika section:nth-child(2n-1) .content, 
 #ecocalypse section:nth-child(2n-1) .content,
-#trilum section:nth-child(2n) .content, 
-#velvet-mite section .content {
+#trilum section:nth-child(2n) .content {
     flex-wrap: wrap-reverse;
 }
 
